@@ -2,12 +2,19 @@ import { Shield, Clock, Award } from 'lucide-react'
 
 export function FeaturesSection() {
   return (
-    <section className="bg-gray-900 text-white py-16 md:py-24">
+    <section className="bg-gray-900 text-white py-8 md:py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex flex-col">
+          <h2 className="text-3xl font-bold mb-12 text-yellow-600 text-start">
           Hơn 20 năm đồng hành cùng chất lượng và uy tín
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+            <p>
+            Thiện Hiền không chỉ là nơi cung cấp các sản phẩm sắt bản lề, pano tôn cửa, mà còn là đối tác đáng tin cậy của mọi công trình. Hơn 20 năm qua, chúng tôi đã khẳng định vị thế bằng sự cam kết về chất lượng, sự tận tâm trong từng sản phẩm và dịch vụ chuyên nghiệp. Chúng tôi luôn nỗ lực để mang lại những giá trị vượt trội cho khách hàng.
+            </p>
+          </div>
+          <div className="flex flex-col gap-8">
           <div className="flex gap-4 items-start">
             <Shield className="w-12 h-12 text-primary shrink-0" />
             <div>
@@ -28,6 +35,7 @@ export function FeaturesSection() {
               <h3 className="font-semibold text-xl mb-2">Uy Tín Hàng Đầu</h3>
               <p className="text-gray-400">Chất lượng được khẳng định, cam kết hài lòng khách hàng</p>
             </div>
+          </div>
           </div>
         </div>
       </div>

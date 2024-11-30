@@ -25,6 +25,30 @@ const products = [
     name: "Tay Nắm Cửa",
     price: "950,000₫",
     image: "/chong.jpeg"
+  },
+  {
+    id: 5,
+    name: "Bản Lề Cửa",
+    price: "800,000₫",
+    image: "/chong.jpeg"
+  },
+  {
+    id: 6,
+    name: "Chống Cửa",
+    price: "500,000₫",
+    image: "/chong.jpeg"
+  },
+  {
+    id: 7,
+    name: "Tay Nắm Cửa",
+    price: "950,000₫",
+    image: "/chong.jpeg"
+  },
+  {
+    id: 8,
+    name: "Tay Nắm Cửa Tay Nắm Cửa",
+    price: "950,000₫",
+    image: "/chong.jpeg"
   }
 ]
 
@@ -37,7 +61,7 @@ export function FeaturedProducts() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {products.map((product) => (
-          <div key={product.id} className="group">
+          <div key={product.id} className="group product-list">
             <div className="relative aspect-square rounded-lg overflow-hidden mb-4 bg-gray-100">
               <Image
                 src={product.image}
@@ -46,13 +70,15 @@ export function FeaturedProducts() {
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
-            <p className="text-primary font-bold">{product.price}</p>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white" size="sm">
+            <h3 className="font-semibold text-lg mb-2 truncate item-product-name">{product.name}</h3>
+            <div className="flex justify-between items-center">
+              <p className="text-primary font-bold text-red-600">{product.price}</p>
+              <Button className="w-1/2 bg-primary hover:bg-primary/90 text-white" size="sm">
                 <ShoppingCart className="w-4 h-4 mr-2" />
                 Liên Hệ
               </Button>
-          </div>
+            </div>
+            </div>
         ))}
       </div>
     </section>

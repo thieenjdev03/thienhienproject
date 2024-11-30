@@ -1,12 +1,12 @@
 import Image from "next/image"
 
 const projects = [
-  { id: 1, image: "./landscape-placeholder.svg", title: "Project 1" },
-  { id: 2, image: "./landscape-placeholder.svg", title: "Project 2" },
-  { id: 3, image: "./landscape-placeholder.svg", title: "Project 3" },
-  { id: 4, image: "./landscape-placeholder.svg", title: "Project 4" },
-  { id: 5, image: "./landscape-placeholder.svg", title: "Project 5" },
-  { id: 6, image: "./landscape-placeholder.svg", title: "Project 6" },
+  { id: 1, image: "/pr1.jpg", title: "Project 1" },
+  { id: 2, image: "/pr2.jpg", title: "Project 2" },
+  { id: 3, image: "/pr3.jpg", title: "Project 3" },
+  { id: 4, image: "/pr4.jpg", title: "Project 4" },
+  { id: 5, image: "/pr5.jpg", title: "Project 5" },
+  { id: 6, image: "/pr6.jpg", title: "Project 6" },
 ]
 
 export function ProjectGallery() {

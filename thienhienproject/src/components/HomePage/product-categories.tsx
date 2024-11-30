@@ -4,22 +4,22 @@ const categories = [
   {
     title: "Bản Lề Cửa",
     image: "/chong.jpeg",
-    href: "/products/hinges"
+    href: "/#"
   },
   {
     title: "Tay Pano",
     image: "/chong.jpeg",
-    href: "/products/handles"
+    href: "/#"
   },
   {
-    title: "Chống Cửa",
+    title: "Chống Cửa Chống Cửa",
     image: "/chong.jpeg",
-    href: "/products/door-stops"
+    href: "/#"
   },
   {
     title: "Tay Nắm Cửa",
     image: "/chong.jpeg",
-    href: "/products/door-knobs"
+    href: "/#"
   }
 ]
 
@@ -44,7 +44,6 @@ export function ProductCategories() {
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                 <h3 className="text-white font-semibold text-lg">{category.title}</h3>
               </div>
-             
             </Link>
           ))}
         </div>
