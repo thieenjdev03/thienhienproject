@@ -6,6 +6,8 @@ import { ProjectGallery } from "../components/project-gallery"
 import { Testimonials } from "../components/testimonials"
 import { ContactSection } from "../components/contact-section"
 import { Layout } from "../components/layout"
+import '../styles/global.scss'
+
 export default function Home() {
   return (
     <Layout>
